@@ -1,6 +1,10 @@
 ## Persistent User Login System
 
-your glitch link e.g. http://a3-dannyjsullivan.glitch.me
+http://a3-dannyjsullivan.glitch.me
+
+## log in as an admin in order to see all the persistent user data. the login is:
+- username: admin
+- password: admin
 
 In this project I: 
 - implemented a persistent database to store my data
