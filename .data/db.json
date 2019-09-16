@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "username": "test",
+      "password": "test",
+      "admin": true
+    },
+    {
+      "username": "asdf",
+      "password": "asdf",
+      "admin": "false"
+    },
+    {
+      "username": "yourboy",
+      "password": "yourboy",
+      "admin": "false"
+    },
+    {
+      "username": "admin",
+      "password": "admin",
+      "admin": true
+    },
+    {
+      "username": "a",
+      "password": "a",
+      "admin": "false"
+    }
+  ],
+  "posts": [],
+  "user": {},
+  "count": 0
+}

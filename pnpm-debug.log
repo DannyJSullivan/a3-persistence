@@ -1,0 +1,61 @@
+---
+  0 debug pnpm:scope: 
+    selected: 1
+    workspacePrefix: null
+  1 info pnpm: 
+    message: "A store server is running. All store manipulations are delegated to it."
+    prefix: "/app"
+  2 debug pnpm:package-json: 
+    initial: 
+      //1: "describes your app and its dependencies"
+      //2: "https://docs.npmjs.com/files/package.json"
+      //3: "updating this file will download and update your packages"
+      name: "hello-express"
+      version: "0.0.1"
+      description: "A simple Node app built on Express, instantly up and running."
+      main: "server.js"
+      scripts: 
+        start: "node server.js"
+      dependencies: 
+        body-parser: "^1.19.0"
+        compression: "^1.7.4"
+        connect-rid: "^0.0.1"
+        connect-timeout: "^1.9.0"
+        express: "^4.16.4"
+        express-session: "^1.16.1"
+        inuitcss: "^6.0.0"
+        lowdb: "^1.0.0"
+        morgan: "^1.9.1"
+        passport: "^0.4.0"
+        passport-local: "^1.0.0"
+        response-time: "^2.3.2"
+        serve-favicon: "^2.5.0"
+      engines: 
+        node: "8.x"
+      repository: 
+        url: "https://glitch.com/edit/#!/hello-express"
+      license: "MIT"
+      keywords: 
+        - "node"
+        - "glitch"
+        - "express"
+      readme: "Assignment 3 - Persistence: Two-tier Web Application with Flat File Database, Express server, and CSS template\n===\n\nDue: September 16th, by 11:59 AM.\n\nThis assignnment continues where we left off, extending it to use the most popular Node.js server framework (express), a flat file database suitable for small applications (lowdb), and a CSS application framework / template of your choice (Boostrap, Material Design, Semantic UI, Pure etc.)\n\n\nBaseline Requirements\n---\n\nYour application is required to implement the following functionalities:\n\n- a `Server`, created using Express (no alternatives will be accepted for this assignment)\n- a `Results` functionality which shows the entire dataset residing in the server's memory\n- a `Form/Entry` functionality which allows users to add, modify, and delete data items (must be all three!) associated with their user name / account.\n- Use of at least five [Express middleware packages](https://expressjs.com/en/resources/middleware.html). Explore! \n- Basic authentication using the [Passport middleware](http://www.passportjs.org) for Express (this counts as one of your five middleware packages). We encourage using the Local strategy, but OAuth (Open Authentication) can also be used for additional technical achievement. The course staff cannot help you with the various flavors of OAuth strategies. YOU MUST PROVIDE US WITH ACCOUNT CREDENTIALS TO LOGIN TO YOUR APPLICATION IF YOU USE OAUTH. The course staff cannot be expected to have credentials for any particular OAuth service.\n- Persistent data storage in between server sessions. [lowdb](https://github.com/typicode/lowdb) is a suitable database package for this assignment and will be discussed in class.\n- Use of a [CSS framework or template](https://github.com/troxler/awesome-css-frameworks). This should do the bulk of your styling/CSS for you and be appropriate to your application. For example, don't use [NES.css](https://nostalgic-css.github.io/NES.css/) (which is awesome!) unless you're creating a game or some type of retro 80s site.\n\nYour application is required to demonstrate the use of the following concepts:\n\nHTML:\n- HTML input tags and form fields of various flavors (`<textarea>`, `<input>`, checkboxes, radio buttons etc.)\n- HTML that can display all data *for a particular authenticated user*. Note that this is different from the last assignnment, which required the display of all data in memory on the server.\n\nNote that it might make sense to have two simple pages for this assignment, one that handles login / authentication, and one that contains the rest of your application. For this assignment, it is acceptable to simply create new user accounts upon login if none exist, however, you must alert your users to this fact. If you're not using OAuth \n\nCSS:\n- CSS styling should primarily be provided by your chosen template/framework. Oftentimes a great deal of care has been put into designing CSS templates; don't override their stylesheets unless you are extremely confident in your graphic design capabilities. The idea is to use CSS templates that give you a professional looking design aesthetic without requiring you to be a graphic designer yourself.\n\nJavaScript:\n- At minimum, a small amount of front-end JavaScript to get / fetch data from the server. See the [previous assignment](https://github.com/cs4241-19a/a2-shortstack) for reference.\n\nNode.js:\n- A server using Express, at least five pieces of Express middleware, and a persistent database (a flat file using lowdb is great).\n\nDeliverables\n---\n\nDo the following to complete this assignment:\n\n1. Implement your project with the above requirements. A good potential starting point is to use the \"hello-express\" project template inside of Glitch; this appears as an option when you hit the \"New Project\" button. Use the work you did in the last assignment as a reference to implement functionality, as well as the notes from class on 9/9 and 9/12.\n2. If you developed your project locally, deploy your project to Glitch, and fill in the appropriate fields in your package.json file.\n3. Test your project to make sure that when someone goes to your main page on Glitch, it displays correctly.\n4. Ensure that your project has the proper naming scheme `a3-yourname` so we can find it.\n5. Fork this repository and modify the README to the specifications below. You do not need to include any of your project files in this repo (we will see those on Glitch), you only need to update and commit the README file.\n6. Create and submit a Pull Request to the original repo. Name the pull request using the following template: `a3-gitname-firstname-lastname`.\n\nSample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)\n---\n\n## Your Web Application Title\n\nyour glitch link e.g. http://a3-charlieroberts.glitch.me\n\nInclude a very brief summary of your project here. Images are encouraged, along with concise, high-level text. Be sure to include:\n\n- the goal of the application\n- challenges you faced in realizing the application\n- what authentication strategy / database you chose to use and why (choosing one because it seemed the easiest to implement is perfectly acceptable)\n- what CSS framework you used and why.\n  - include any modifications to the CSS framework you made via custom CSS you authored.\n- the five Express middleware packages you used and a short (one sentence) summary of what each one does.\n\n## Technical Achievements\n- **Tech Achievement 1**: I used OAuth authentication via the GitHub strategy\n- **Tech Achievement 2**: I used over ten Express middleware packages, enabling me to create a server that...\n\n### Design/Evaluation Achievements\n- **Design Achievement 1**: I tested my application using screen reading software, and found that...\n- **Design Achievement 2**: I followed best practices for accessibility, including providing alt attributes for images and using semantic HTML. There are no `<div>` or `<span>` elements in my document.\n- **Design Achievement 3**: We tested the application with n=X users, finding that...\n\n\ntech achievement: hash passwords when stored, flip bits\ndesign: edit css page, change background or something maybe\n\nmiddleware:\nexpress-responseTime\nexpress-session\nserve-favicon (set up, but not running on glitch since glitch does not allow files to be directly uploaded/linked to)\ntimeout\n\n\nusing the turrett css stylesheet\n\ncreate response\n\nallow users to change their own username and password \nallow user to delete own account\nfigure out some data to allow users to add to their own account, i.e. their own information (email, phone number, address, name, whatever else i can think of)\n\nmake server resposne for getting user info\n\nallow admin to switch between seeing encrypted password vs. unencrypted\n\nmaybe make it a forum type thing??"
+      readmeFilename: "README.md"
+      gitHead: "69e59c951ee71ce7a528eb04a4b9ac9e84b5b4fa"
+      _id: "hello-express@0.0.1"
+    prefix: "/app"
+  3 warn pnpm: 
+    message: "Moving body-parser that was installed by a different package manager to \"node_modules/.ignored"
+    prefix: "/app"
+  4 error pnpm: 
+    message: 
+      errno: -39
+      code: "ENOTEMPTY"
+      syscall: "rename"
+      path: "/rbd/pnpm-volume/f9a195e9-a2b6-438c-8fec-ed2dbad50501/node_modules/body-parser"
+      dest: "/rbd/pnpm-volume/f9a195e9-a2b6-438c-8fec-ed2dbad50501/node_modules/.ignored/body-parser"
+    err: 
+      name: "Error"
+      message: "ENOTEMPTY: directory not empty, rename '/rbd/pnpm-volume/f9a195e9-a2b6-438c-8fec-ed2dbad50501/node_modules/body-parser' -> '/rbd/pnpm-volume/f9a195e9-a2b6-438c-8fec-ed2dbad50501/node_modules/.ignored/body-parser'"
+      code: "ENOTEMPTY"
+      stack: "Error: ENOTEMPTY: directory not empty, rename '/rbd/pnpm-volume/f9a195e9-a2b6-438c-8fec-ed2dbad50501/node_modules/body-parser' -> '/rbd/pnpm-volume/f9a195e9-a2b6-438c-8fec-ed2dbad50501/node_modules/.ignored/body-parser'"
